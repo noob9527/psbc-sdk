@@ -1,0 +1,47 @@
+{
+  "groups": [
+    {
+      "name": "psbc",
+      "type": "cn.staynoob.psbc.PsbcProperties",
+      "sourceType": "cn.staynoob.psbc.PsbcProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "psbc.jks-file",
+      "type": "java.lang.String",
+      "sourceType": "cn.staynoob.psbc.PsbcProperties"
+    },
+    {
+      "name": "psbc.jks-password",
+      "type": "java.lang.String",
+      "sourceType": "cn.staynoob.psbc.PsbcProperties"
+    },
+    {
+      "name": "psbc.merchant-key-alias",
+      "type": "java.lang.String",
+      "sourceType": "cn.staynoob.psbc.PsbcProperties"
+    },
+    {
+      "name": "psbc.merchant-key-password",
+      "type": "java.lang.String",
+      "sourceType": "cn.staynoob.psbc.PsbcProperties"
+    },
+    {
+      "name": "psbc.paygate-key-alias",
+      "type": "java.lang.String",
+      "sourceType": "cn.staynoob.psbc.PsbcProperties"
+    },
+    {
+      "name": "psbc.api-url",
+      "type": "java.lang.String",
+      "sourceType": "cn.staynoob.psbc.PsbcProperties"
+    },
+    {
+      "name": "psbc.log-level",
+      "type": "okhttp3.logging.HttpLoggingInterceptor.Level",
+      "sourceType": "cn.staynoob.psbc.PsbcProperties"
+    }
+  ],
+  "hints": []
+}
