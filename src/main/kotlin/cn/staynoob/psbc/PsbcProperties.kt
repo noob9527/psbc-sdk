@@ -3,6 +3,7 @@ package cn.staynoob.psbc
 import cn.staynoob.psbc.kotlin.KotlinAllOpen
 import cn.staynoob.psbc.kotlin.NoArgConstructor
 import okhttp3.logging.HttpLoggingInterceptor
+import org.jetbrains.annotations.NotNull
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.validation.annotation.Validated
 import javax.annotation.PostConstruct
@@ -17,6 +18,9 @@ class PsbcProperties(
         var merchantKeyAlias: String,
         var merchantKeyPassword: String,
         var paygateKeyAlias: String,
+        @get: NotNull
+        var mercCode: String,
+        var callbackServer: String?,
         var apiUrl: String,
         var logLevel: HttpLoggingInterceptor.Level
 ) {
