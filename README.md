@@ -13,7 +13,7 @@ dependencies {
 }
 ```
 ### getting started
-if you are using spring boot, related service are autoconfigure, otherwise you have to create them on your own.\
+if you are using spring boot, related service will be autoconfigured, otherwise you have to create them on your own.\
 
 ### configuration
 | key | required | default |

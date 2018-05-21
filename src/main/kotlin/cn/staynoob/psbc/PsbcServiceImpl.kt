@@ -2,6 +2,7 @@ package cn.staynoob.psbc
 
 import cn.staynoob.psbc.domain.IperParam
 import cn.staynoob.psbc.domain.IpsrParam
+import cn.staynoob.psbc.domain.WperParam
 import cn.staynoob.psbc.util.exec
 
 class PsbcServiceImpl(
@@ -10,6 +11,10 @@ class PsbcServiceImpl(
 ) : PsbcService {
     override fun iper(param: IperParam): String {
         return client.iper(param.toPlain()).exec()!!
+    }
+
+    override fun wper(param: WperParam): String {
+        return client.wper(param.toPlain()).exec()!!
     }
 
     override fun ipsr(param: IpsrParam): String {
