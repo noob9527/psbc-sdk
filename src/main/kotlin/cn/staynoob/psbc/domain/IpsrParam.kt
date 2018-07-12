@@ -1,6 +1,7 @@
 package cn.staynoob.psbc.domain
 
 import cn.staynoob.psbc.util.paramDateFormatter
+import cn.staynoob.psbc.util.paramDatetimeFormatter
 import java.math.BigDecimal
 import java.net.URL
 import java.net.URLEncoder
@@ -30,7 +31,8 @@ class IpsrParam(
 
         return originalMap + mapOf(
                 "MercUrl" to mercUrl,
-                "MercDtTm" to paramDateFormatter.format(MercDtTm)
+                "MercDtTm" to paramDatetimeFormatter.format(MercDtTm),
+                "OSttDate" to paramDateFormatter.format(OSttDate)
         )
     }
 }

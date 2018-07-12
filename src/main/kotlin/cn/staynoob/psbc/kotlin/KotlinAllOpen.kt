@@ -1,3 +1,3 @@
 package cn.staynoob.psbc.kotlin
 
-annotation class KotlinAllOpen
+internal annotation class KotlinAllOpen

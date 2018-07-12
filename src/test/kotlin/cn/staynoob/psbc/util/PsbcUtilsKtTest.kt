@@ -11,7 +11,7 @@ class PsbcUtilsKtTest {
     @DisplayName("test formatter")
     fun test100() {
         val date = LocalDateTime.of(2010, Month.JANUARY, 1, 1, 1, 1)
-        val res = paramDateFormatter.format(date)
+        val res = paramDatetimeFormatter.format(date)
         assertThat(res.length).isEqualTo("yyyyMMddHHmmss".length)
         assertThat(res).isEqualTo("20100101010101")
     }

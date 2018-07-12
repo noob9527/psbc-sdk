@@ -1,6 +1,6 @@
 package cn.staynoob.psbc.domain
 
-import cn.staynoob.psbc.util.paramDateFormatter
+import cn.staynoob.psbc.util.paramDatetimeFormatter
 import java.math.BigDecimal
 import java.net.URLEncoder
 import java.time.LocalDate
@@ -30,7 +30,7 @@ class IperParam(
 
         return originalMap + mapOf(
                 "MercUrl" to mercUrl,
-                "MercDtTm" to paramDateFormatter.format(MercDtTm)
+                "MercDtTm" to paramDatetimeFormatter.format(MercDtTm)
         )
     }
 }

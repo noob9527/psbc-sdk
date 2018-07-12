@@ -8,8 +8,13 @@ import java.time.format.DateTimeFormatter
 import java.util.*
 import kotlin.reflect.full.memberProperties
 
-internal val paramDateFormatter = DateTimeFormatter
+internal val paramDatetimeFormatter = DateTimeFormatter
         .ofPattern("yyyyMMddHHmmss")
+        .withLocale(Locale.getDefault())
+        .withZone(ZoneId.systemDefault())
+
+internal val paramDateFormatter = DateTimeFormatter
+        .ofPattern("yyyyMMdd")
         .withLocale(Locale.getDefault())
         .withZone(ZoneId.systemDefault())
 
